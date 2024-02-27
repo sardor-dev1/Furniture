@@ -1,0 +1,88 @@
+.home {
+    padding-top: 200px;
+    gap: 25px;
+
+    &__left {
+        background-image: url(../images/home/Group\ 16.png);
+        width: 100%;
+        max-width: 650px;
+
+        &__text {
+            font-size: 18px;
+            font-weight: 700;
+            color: $hoverColor;
+        }
+
+        &__tittle {
+            font-size: 55px;
+            font-weight: 700;
+            padding: 65px 0 45px;
+
+            @media (max-width:900px) {
+                font-size: 45px;
+            }
+            @media (max-width:500px) {
+                font-size: 40px;
+            }
+            @media (max-width:450px) {
+                font-size: 34px;
+            }
+        }
+
+        &__btns {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            &__watch {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                background: transparent;
+                font-size: 22px;
+                font-weight: 600;
+                line-height: 27px;
+                transition: 0.3s;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+
+                @media (max-width:500px) {
+                    font-size: 16px;
+                }
+            }
+            
+            @media (max-width:400px) {
+                    flex-direction: column;
+                    align-items: start;
+                    gap: 20px;
+                }
+        }
+    }
+
+    &__right {
+        width: 100%;
+        max-width: 450px;
+        
+        img {
+            width: 100%;
+        }
+
+        @media (max-width:1130px) {
+            width: 100%;
+            max-width: 350px;
+        }
+    }
+    @media (max-width:900px) {
+        flex-direction: column-reverse;
+        gap: 40px;
+        padding-top: 120px;
+
+        &__right {
+            max-width: 450px;
+        }
+
+    }
+    
+}

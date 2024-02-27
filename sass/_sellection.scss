@@ -1,0 +1,165 @@
+.sellection {
+    padding-top: 200px;
+
+    &__tittle {
+        font-size: 40px;
+        font-weight: 600;
+        padding-bottom: 15px;
+
+        @media (max-width:900px) {
+            font-size: 42px;
+        }
+        @media (max-width:500px) {
+            font-size: 34px;
+        }
+    }
+
+    &__name {
+        padding-bottom: 80px;
+
+        @media (max-width:900px) {
+            width: 350px;
+        }
+        @media (max-width:500px) {
+            width: 250px;
+        }
+    }
+
+    &__imgs {
+        position: relative;
+
+        &__house {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto 180px auto;
+            display: block;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+
+            @media (max-width:830px) {
+                height: 400px;
+            }
+
+            @media (max-width:500px) {
+                height: 500px;
+            }
+        }
+
+        &__points {
+            width: 20%;
+            position: absolute;
+            bottom: -20%;
+            left: 18%;
+        }
+
+        &__cards {
+
+            &__card {
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+                position: absolute;
+                width: 100%;
+                max-width: 450px;
+                display: flex;
+                align-items: start;
+                background-color: white;
+
+                img {
+                    padding: 44px 22px 0 44px;
+                }
+
+                div {
+                    h4 {
+                        font-size: 20px;
+                        font-weight: 700;
+                        padding: 58px 0 10px 0;
+                    }
+
+                    p {
+                        padding-bottom: 68px;
+                    }
+                }
+            }
+
+            &__card-1 {
+                top: 15%;
+                left: 0;
+            }
+
+            &__card-2 {
+                top: -8%;
+                right: 15%;
+            }
+
+            &__card-3 {
+                right: 0;
+                bottom: -15%;
+                
+            }
+
+            @media (max-width:1220px) {
+                &__card-1 {
+                    left: -5%;
+                }
+
+                &__card-2 {
+                    right: -5%;
+                }
+
+                &__card-3 {
+                    right: -5%;
+                }
+            }
+
+            @media (max-width:1000px) {
+                &__card {
+                    left: 0;
+                    max-width: 350px;
+
+
+                    div {
+                        p {
+                            padding: 15px 10px 20px 0;
+                        }
+
+                        h4 {
+                            padding: 30px 0 5px 0;
+                        }
+                    }
+
+                    img {
+                        padding: 30px 22px 0 30px;
+                    }
+                }
+
+                &__card-1 {
+                    top: 130px;
+                }
+
+                &__card-3 {
+                    bottom: -25px;
+                }
+            }
+
+            @media (max-width:500px) {
+                &__card {
+                    display: none;
+                }
+
+                &__points {
+                    display: none;
+                }
+            }
+        }
+
+        @media (max-width:1220px) {
+            &__card-3 {
+                top: -70%;
+            }
+        }
+
+        @media (max-width:500px) {
+                &__house {
+                    height: auto;
+                }
+            }
+    }
+}
